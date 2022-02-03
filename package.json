@@ -11,7 +11,7 @@
     "build": "electron-builder --mac --windows --linux",
     "release": "electron-builder --mac --windows --linux --publish always"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/phybros/electron-packaging-test",
   "keywords": [
     "Electron",
     "quick",
