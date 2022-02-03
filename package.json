@@ -22,43 +22,13 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "@electron-forge/cli": "^6.0.0-beta.63",
-    "@electron-forge/maker-deb": "^6.0.0-beta.63",
-    "@electron-forge/maker-rpm": "^6.0.0-beta.63",
-    "@electron-forge/maker-squirrel": "^6.0.0-beta.63",
-    "@electron-forge/maker-zip": "^6.0.0-beta.63"
-  },
-  "dependencies": {
-    "electron-squirrel-startup": "^1.0.0",
     "electron": "^17.0.0",
     "electron-builder": "^22.14.5"
   },
+  "dependencies": {
+  },
   "config": {
-    "forge": {
-      "packagerConfig": {},
-      "makers": [
-        {
-          "name": "@electron-forge/maker-squirrel",
-          "config": {
-            "name": "electron_quick_start"
-          }
-        },
-        {
-          "name": "@electron-forge/maker-zip",
-          "platforms": [
-            "darwin"
-          ]
-        },
-        {
-          "name": "@electron-forge/maker-deb",
-          "config": {}
-        },
-        {
-          "name": "@electron-forge/maker-rpm",
-          "config": {}
-        }
-      ]
-    }
+
   },
   "build": {
     "appId": "net.phybros.electrontest",
@@ -70,7 +40,9 @@
       "icon": false
     },
     "linux": {
-      "target": ["AppImage"],
+      "target": [
+        "AppImage"
+      ],
       "category": "Office"
     }
   }
