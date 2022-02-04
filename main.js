@@ -10,7 +10,8 @@ function createWindow () {
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       devTools: false,
-    }
+    },
+    autoHideMenuBar: true,
   })
 
   // and load the index.html of the app.
