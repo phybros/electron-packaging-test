@@ -1,15 +1,10 @@
 {
   "name": "electron-quick-start",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make",
-    "postinstall": "electron-builder install-app-deps",
-    "build": "electron-builder --publish never",
-    "release": "electron-builder --publish always"
+    "start": "electron-forge start"
   },
   "repository": "https://github.com/phybros/electron-packaging-test",
   "keywords": [
